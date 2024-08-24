@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Page() {
   return (
-    <section className="bg-white">
+    <section className="bg-white py-24">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
           <div className="absolute inset-0">
@@ -54,7 +55,7 @@ function Page() {
         <div className="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
           <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">Log in to Start Learning</h2>
-            <p className="mt-2 text-base text-gray-600">New here? <a href="#" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Create a free account</a></p>
+            <p className="mt-2 text-base text-gray-600">New here? <Link href="/signup" className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Create a free account</Link></p>
 
             <form action="#" method="POST" className="mt-8">
               <div className="space-y-5">
