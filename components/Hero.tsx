@@ -9,28 +9,29 @@ export default function Hero() {
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
               <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">
-                A social media for learners
+                A Social Media for Learners
               </p>
               <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
-                Connect & learn from the experts
+                Connect & Learn from the Experts
               </h1>
               <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
-                Grow your career fast with the right mentor.
+                Accelerate your career with the right mentor.
               </p>
 
               <Link
-                href="/login"
-                title="Join for free"
+                href="/signup" // Updated link to signup for clarity
+                title="Join for Free"
                 className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-colors duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                 role="button"
               >
-                Join for free
+                Join for Free
                 <svg
                   className="w-6 h-6 ml-8 -mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
+                  aria-hidden="true" // Add aria-hidden for SVG
                 >
                   <path
                     strokeLinecap="round"
@@ -42,13 +43,13 @@ export default function Hero() {
               </Link>
 
               <p className="mt-5 text-gray-600">
-                Already joined us?{" "}
+                Already a member?{" "}
                 <Link
                   href="/login"
-                  title="Log in"
+                  title="Log In"
                   className="text-black transition-colors duration-200 hover:underline"
                 >
-                  Log in
+                  Log In
                 </Link>
               </p>
             </div>
@@ -57,10 +58,11 @@ export default function Hero() {
               <Image
                 className="w-full"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
-                alt="Hero Image"
+                alt="Illustration of learning and connection"
                 width={800}
                 height={600}
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw" // Improve performance with responsive image sizes
               />
             </div>
           </div>
