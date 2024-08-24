@@ -15,13 +15,13 @@ export default function Hero() {
                 Connect & learn from the experts
               </h1>
               <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
-                Grow your career fast with right mentor.
+                Grow your career fast with the right mentor.
               </p>
 
               <Link
                 href="/login"
                 title="Join for free"
-                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-colors duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                 role="button"
               >
                 Join for free
@@ -46,7 +46,7 @@ export default function Hero() {
                 <Link
                   href="/login"
                   title="Log in"
-                  className="text-black transition-all duration-200 hover:underline"
+                  className="text-black transition-colors duration-200 hover:underline"
                 >
                   Log in
                 </Link>
@@ -58,8 +58,9 @@ export default function Hero() {
                 className="w-full"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
                 alt="Hero Image"
-                width={800}  // Specify the width
-                height={600} // Specify the height
+                width={800}
+                height={600}
+                priority
               />
             </div>
           </div>
